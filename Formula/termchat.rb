@@ -5,21 +5,21 @@
 class Termchat < Formula
   desc "Fast, reliable, chat-only TUI that runs in any terminal"
   homepage "https://github.com/jpe0824/termchat"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jpe0824/termchat/releases/download/v0.2.0/termchat_0.2.0_darwin_amd64.tar.gz"
-      sha256 "cb3dfb4f58bf6b9bd4a24a890327f77efdc7a3e031b9426abe89c541e36b765e"
+      url "https://github.com/jpe0824/termchat/releases/download/v0.3.0/termchat_0.3.0_darwin_amd64.tar.gz"
+      sha256 "fbbddbaeb9a8ed5bf456adcc32962033502c39da192da5a02b43d90096797c45"
 
       define_method(:install) do
         bin.install "termchat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jpe0824/termchat/releases/download/v0.2.0/termchat_0.2.0_darwin_arm64.tar.gz"
-      sha256 "f39bcf7fd0a68c30c9a0613631e16367b14522641f060047a1def5b3228321f7"
+      url "https://github.com/jpe0824/termchat/releases/download/v0.3.0/termchat_0.3.0_darwin_arm64.tar.gz"
+      sha256 "3e9b1e0595def24561f49cade55dbf16fd383aae94ff32a65f46d1e36c2227db"
 
       define_method(:install) do
         bin.install "termchat"
@@ -29,15 +29,15 @@ class Termchat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jpe0824/termchat/releases/download/v0.2.0/termchat_0.2.0_linux_amd64.tar.gz"
-      sha256 "8e4b14de409456e9ee067ecc64cfe4265adc5407ed21dbbbfbb733580976268a"
+      url "https://github.com/jpe0824/termchat/releases/download/v0.3.0/termchat_0.3.0_linux_amd64.tar.gz"
+      sha256 "e3e12baec293a4d27dec2d17a7a2ab6e048035883cd4152703f687d87c246a63"
       define_method(:install) do
         bin.install "termchat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jpe0824/termchat/releases/download/v0.2.0/termchat_0.2.0_linux_arm64.tar.gz"
-      sha256 "7e13d0c6148c0d22593ce53d25a2616b4b4f8eb7d31f5185da74c94c0097bf9f"
+      url "https://github.com/jpe0824/termchat/releases/download/v0.3.0/termchat_0.3.0_linux_arm64.tar.gz"
+      sha256 "d6e0daf91580891b6f0cb3719c7ec66765d43579b9521fbeb47621136ba224a0"
       define_method(:install) do
         bin.install "termchat"
       end
